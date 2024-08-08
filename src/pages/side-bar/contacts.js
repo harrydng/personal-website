@@ -7,7 +7,7 @@ function Contacts() {
   return (
     <div>
       <div className="fixed left-16 top-1/3 flex flex-col items-center space-y-6">
-        {socialMedia.map(({ href, src, alt, Icon }) => (
+        {socialMedia.map(({ href, alt, Icon }) => (
           <a
             key={alt}
             href={href}
