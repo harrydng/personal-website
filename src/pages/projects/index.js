@@ -2,7 +2,7 @@
 function Projects() {
     return (
         <>
-            This page is dedicated for showcasing projects
+            <h3 className="text-2xl font-bold underline">My projects</h3>
         </>
     );
 }
