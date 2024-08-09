@@ -16,6 +16,7 @@ function Contacts() {
             key={alt}
             href={href}
             target="_blank"
+            rel="noopener noreferrer"
             className="w-8 h-8 hover:scale-150 transition-transform duration-300"
           >
             <Icon className="w-full h-full text-stone-300 hover:text-green-400" />

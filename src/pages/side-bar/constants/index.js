@@ -1,7 +1,6 @@
 import { LiaGithub } from "react-icons/lia";
 import { LiaLinkedin } from "react-icons/lia";
 import { LiaInstagram } from "react-icons/lia";
-import { LiaFacebookSquare } from "react-icons/lia";
 import { LiaSpotify } from "react-icons/lia";
 
 export const navLinks = [
