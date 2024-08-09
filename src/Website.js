@@ -4,6 +4,8 @@ import Experiences from "./pages/experience";
 import Projects from "./pages/projects";
 import Contacts from "./pages/side-bar/contacts";
 import NavigationBar from "./pages/side-bar/nav-bar";
+import Introduction from "./pages/introduction";
+import ContactMe from "./pages/contact-me";
 import "./index.css";
 
 function Website() {
@@ -46,12 +48,12 @@ function Website() {
   });
 
   return (
-    <div className="h-full w-full bg-stone-950 text-white selection:bg-white selection:text-black selection:underline custom-scrollbar">
+    <div className="h-full w-full bg-stone-950 text-stone-300 selection:text-black">
       {/* Mouse movement effect layer */}
       <div
         className="pointer-events-none fixed inset-0 z-10"
         style={{
-          background: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, rgb(4 47 46), rgba(3, 7, 18, 0) 70%)`,
+          background: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, rgb(4 47 46), rgba(3, 7, 18, 0) 100%)`,
         }}
       ></div>
 
@@ -68,7 +70,11 @@ function Website() {
       <div className="p-48 relative z-20 font-serif">
         <Contacts />
 
-        <div className="space-y-32">
+        <div className="space-y-40">
+          <div>
+            <Introduction />
+          </div>
+
           <div id="about-me">
             <AboutMe />
           </div>
@@ -79,6 +85,10 @@ function Website() {
 
           <div id="projects">
             <Projects />
+          </div>
+
+          <div id="contact-me">
+            <ContactMe />
           </div>
         </div>
       </div>
