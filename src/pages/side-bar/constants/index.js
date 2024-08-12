@@ -4,10 +4,10 @@ import { LiaInstagram } from "react-icons/lia";
 import { LiaSpotify } from "react-icons/lia";
 
 export const navLinks = [
-  { id: "about-me", label: "About Me" },
-  { id: "experience", label: "Experience" },
-  { id: "projects", label: "Projects" },
-  { id: "contact-me", label: "Contact Me" },
+  { id: "about-me-spacer", label: "About Me" },
+  { id: "experience-spacer", label: "Experience" },
+  { id: "projects-spacer", label: "Projects" },
+  { id: "contact-me-spacer", label: "Contact Me" },
 ];
 
 export const socialMedia = [

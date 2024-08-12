@@ -19,7 +19,7 @@ function Website() {
   };
 
   useEffect(() => {
-    // Add event listener
+    // Add event listener for mouse movement
     window.addEventListener("mousemove", handleMouseMove);
 
     // Remove event listener on cleanup
@@ -31,24 +31,35 @@ function Website() {
   // Handle mouse scroll, hide the bar when the mouse scrolls down the page
   const handleMouseScroll = () => {
     const currY = window.scrollY;
-    if (lastScrollY > currY) {
+
+    if (currY < lastScrollY) {
+      // Scrolling up
       setShowBar(true);
-    } else {
+    } else if (currY > lastScrollY) {
+      // Scrolling down
       setShowBar(false);
     }
+
+    // Log values for debugging (optional)
+    console.log("Current Y:", currY);
+    console.log("Last Scroll Y:", lastScrollY);
+    console.log("Show Bar:", showBar);
+
     setLastScrollY(currY);
   };
 
   useEffect(() => {
+    // Add event listener for scrolling
     window.addEventListener("scroll", handleMouseScroll);
 
+    // Remove event listener on cleanup
     return () => {
       window.removeEventListener("scroll", handleMouseScroll);
     };
-  });
+  }, [lastScrollY]); // Add `lastScrollY` as a dependency to update on scroll
 
   return (
-    <div className="h-full w-full bg-stone-950 text-stone-300 selection:text-black">
+    <div className="h-full w-full bg-stone-950 text-stone-300">
       {/* Mouse movement effect layer */}
       <div
         className="pointer-events-none fixed inset-0 z-10"
@@ -70,24 +81,28 @@ function Website() {
       <div className="p-48 relative z-20 font-serif">
         <Contacts />
 
-        <div className="space-y-40">
+        <div className="space-y-24">
           <div>
             <Introduction />
           </div>
 
           <div id="about-me">
+            <div id="about-me-spacer" className="h-14" />
             <AboutMe />
           </div>
 
           <div id="experience">
+            <div id="experience-spacer" className="h-14" />
             <Experiences />
           </div>
 
           <div id="projects">
+            <div id="projects-spacer" className="h-14" />
             <Projects />
           </div>
 
           <div id="contact-me">
+            <div id="contact-me-spacer" className="h-14" />
             <ContactMe />
           </div>
         </div>

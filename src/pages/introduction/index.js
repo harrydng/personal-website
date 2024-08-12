@@ -19,7 +19,7 @@ function Introduction() {
       <div className="space-y-7">
         <p className="text-2xl text-green-600 font-bold">Hi, my name is</p>
         <p className="text-8xl text-green-500 font-bold">Harry Duong.</p>
-        <p className="text-5xl text-stone-300	">
+        <p className="text-5xl text-stone-300">
           I'm a Third-year student at Northeastern University.
         </p>
         <p className="text-2xl text-stone-400 w-1/2">
