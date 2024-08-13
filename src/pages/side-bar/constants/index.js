@@ -5,7 +5,7 @@ import { LiaSpotify } from "react-icons/lia";
 
 export const navLinks = [
   { id: "about-me-spacer", label: "About Me" },
-  { id: "experience-spacer", label: "Experience" },
+  { id: "experience-spacer", label: "Experiences" },
   { id: "projects-spacer", label: "Projects" },
   { id: "contact-me-spacer", label: "Contact Me" },
 ];
@@ -27,7 +27,7 @@ export const socialMedia = [
     alt: "Github",
   },
   {
-    href: "https://open.spotify.com/",
+    href: "https://open.spotify.com/user/zr34zl3kmyt0p2wru1jkqsdx5?si=6604db2b69a74cc7",
     Icon: LiaSpotify,
     alt: "Spotify",
   },

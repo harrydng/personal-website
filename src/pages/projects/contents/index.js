@@ -16,7 +16,7 @@ export const projects = [
     title: "Stock Portfolio",
     github: "https://github.com/harrydng/personal-stocks-portfolio",
     external: "",
-    tech: "- Java - JFrame - JPanel",
+    tech: "Java \n JFrame \n JPanel",
     company: "",
     showInProjects: true,
     description:

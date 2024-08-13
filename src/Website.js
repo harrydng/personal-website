@@ -39,28 +39,20 @@ function Website() {
       // Scrolling down
       setShowBar(false);
     }
-
-    // Log values for debugging (optional)
-    console.log("Current Y:", currY);
-    console.log("Last Scroll Y:", lastScrollY);
-    console.log("Show Bar:", showBar);
-
     setLastScrollY(currY);
   };
 
   useEffect(() => {
-    // Add event listener for scrolling
     window.addEventListener("scroll", handleMouseScroll);
 
-    // Remove event listener on cleanup
     return () => {
       window.removeEventListener("scroll", handleMouseScroll);
     };
-  }, [lastScrollY]); // Add `lastScrollY` as a dependency to update on scroll
+  }, [handleMouseScroll, lastScrollY]);
 
   return (
     <div className="h-full w-full bg-stone-950 text-stone-300">
-      {/* Mouse movement effect layer */}
+      {/* Mouse movement layer */}
       <div
         className="pointer-events-none fixed inset-0 z-10"
         style={{
@@ -68,6 +60,7 @@ function Website() {
         }}
       ></div>
 
+      {/* The top Navigation Bar */}
       <div className="relative z-30">
         <div
           className={`navigation-bar ${
@@ -78,6 +71,7 @@ function Website() {
         </div>
       </div>
 
+      {/* The Pages */}
       <div className="p-48 relative z-20 font-serif">
         <Contacts />
 
@@ -106,6 +100,11 @@ function Website() {
             <ContactMe />
           </div>
         </div>
+      </div>
+
+      {/* The Footer */}
+      <div className="bottom-2 text-sm justify-center flex text-stone-400">
+        © Harry Duong 2024
       </div>
     </div>
   );

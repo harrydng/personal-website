@@ -47,7 +47,7 @@ function ContactMe() {
           <label
             className={`block text-lg font-bold uppercase tracking-wider duration-300 ${
               fieldClicked === "name"
-                ? "text-green-400 scale-110"
+                ? "text-green-700 scale-110"
                 : "text-stone-300"
             }`}
           >
@@ -68,7 +68,7 @@ function ContactMe() {
           <label
             className={`block text-lg font-bold uppercase tracking-wider duration-300 ${
               fieldClicked === "email"
-                ? "text-green-400 scale-110"
+                ? "text-green-700 scale-110"
                 : "text-stone-300"
             }`}
           >
@@ -89,7 +89,7 @@ function ContactMe() {
           <label
             className={`block text-lg font-bold uppercase tracking-wider duration-300 ${
               fieldClicked === "subject"
-                ? "text-green-400 scale-110"
+                ? "text-green-700 scale-110"
                 : "text-stone-300"
             }`}
           >
@@ -119,7 +119,7 @@ function ContactMe() {
           <textarea
             name="message"
             className="w-full bg-transparent border-b-2 border-stone-300 focus:outline-none focus:text-green-400 text-white text-lg h-16"
-            placeholder="Your Message"
+            placeholder="Please Leave a Message"
             required
             onFocus={() => handleFocus("message")}
             onBlur={handleBlur}
