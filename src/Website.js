@@ -13,6 +13,16 @@ function Website() {
   const [showBar, setShowBar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
+  useEffect(() => {
+    // Set the zoom level to 90%
+    document.body.style.zoom = "70%";
+
+    // Optional: Cleanup on component unmount
+    return () => {
+      document.body.style.zoom = "100%"; // Reset zoom to default
+    };
+  }, []);
+
   // Handle mouse movement, changing color on the screen
   const handleMouseMove = (e) => {
     setMousePosition({ x: e.clientX, y: e.clientY });
