@@ -30,7 +30,7 @@ function NavigationBar() {
         </nav>
 
         <a
-          href="/Harry_Resume-08.08.2024.pdf"
+          href="/Harry.09.22.2024.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="ml-10 px-4 py-2 text-xl bg-green-600 font-bold text-black hover:bg-black hover:text-green-400 hover:scale-110 duration-200"

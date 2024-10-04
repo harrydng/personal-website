@@ -11,14 +11,9 @@ function AboutMe() {
         <h3 className="text-5xl font-bold text-stone-300">About Me</h3>
 
         {/* About Me Text */}
-        <div className="space-y-16">
+        <div className="space-y-8">
           <div>
-            When I'm not glued to my screen, I love spending time cooking,
-            baking, enjoying music, playing video games, and going for a jog.
-          </div>
-          <div>
-            In this fast-paced world of evolving technologies, I love to learn
-            new and better ways to engineer
+            I love to learn new and better ways to engineer
             <span className="text-green-400">
               {" "}
               smooth user experiences with clean and efficient code,{" "}
@@ -26,10 +21,16 @@ function AboutMe() {
             and I am always looking for collaborating opportunities with those
             who are just as eager to share their knowledge as I am to learn.
           </div>
+
+          <div>
+            When I'm not glued to my screen, I enjoy spending time cooking,
+            baking, listening to music, playing video games, and going for a
+            jog.
+          </div>
         </div>
 
         {/* Technologies worked with recently */}
-        <div className="text-stone-300">
+        <div className="text-stone-400">
           Here are some technologies I have worked with recently !
         </div>
         <div className="grid grid-cols-4 gap-5">

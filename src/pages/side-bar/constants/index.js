@@ -6,7 +6,7 @@ import { LiaSpotify } from "react-icons/lia";
 export const navLinks = [
   { id: "about-me-spacer", label: "About Me" },
   { id: "experience-spacer", label: "Experiences" },
-  { id: "projects-spacer", label: "Projects" },
+  // { id: "projects-spacer", label: "Projects" },
   { id: "contact-me-spacer", label: "Contact Me" },
 ];
 

@@ -5,7 +5,7 @@ export const projects = [
     title: "LightEmAll Game",
     github: "https://github.com/harrydng/personal-stocks-portfolio",
     external: "",
-    tech: "- Java",
+    tech: "Java",
     company: "",
     showInProjects: true,
     description: "",
@@ -28,19 +28,11 @@ export const projects = [
     title: "Booking System",
     github: "",
     external: "",
-    tech: "- Java - Springboot MVC - SQL",
-    company: "",
-    showInProjects: true,
-    description: "",
-  },
-  {
-    date: "2024-07-01",
-    title: "Admin Server",
-    github: "https://github.com/harrydng/personal-stocks-portfolio",
-    external: "",
-    tech: "- Reactjs - Antd - Typescript - API",
+    tech: "Java \n Springboot MVC \n SQL",
     company: "",
     showInProjects: true,
     description: "",
   },
 ];
+
+export default projects;

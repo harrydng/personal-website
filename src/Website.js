@@ -90,10 +90,10 @@ function Website() {
             <Experiences />
           </div>
 
-          <div id="projects">
-            <div id="projects-spacer" className="h-14" />
-            <Projects />
-          </div>
+          {/*<div id="projects">*/}
+          {/*  <div id="projects-spacer" className="h-14" />*/}
+          {/*  <Projects />*/}
+          {/*</div>*/}
 
           <div id="contact-me">
             <div id="contact-me-spacer" className="h-14" />
